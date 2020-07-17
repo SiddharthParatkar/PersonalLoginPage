@@ -15,9 +15,7 @@ export class Login extends React.Component {
             <img src={loginImg} alt="Cibu Login" />
           </div>
           <div className="form">
-            <div className="form-group">
-              {" "}
-              {/*change to email and have email validation?*/}
+            <div className="form-group"> {/*change to email and have email validation?*/}
               <label htmlFor="username">Username</label>
               <input type="text" name="username" placeholder="Username" />
             </div>
