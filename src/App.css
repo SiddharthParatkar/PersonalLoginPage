@@ -51,9 +51,9 @@
 }
 
 .btn:hover {
-  background-color: #2386c8;
+    background-color: #2386c8;
 }
 
 .btn:focus {
-  outline: none;
-}
+    outline: none;
+  }
