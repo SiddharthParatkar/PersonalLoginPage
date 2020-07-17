@@ -24,7 +24,7 @@ export class Register extends React.Component {
               <input type="email" name="email" placeholder="Email" />
             </div>
             <div className="form-group">
-              <label htmlFor="password">password</label>
+              <label htmlFor="password">Password</label>
               <input type="password" name="password" placeholder="password" />
             </div>
           </div>
