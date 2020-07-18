@@ -15,9 +15,9 @@ export class Login extends React.Component {
             <img src={loginImg} alt="Cibu Login" />
           </div>
           <div className="form">
-            <div className="form-group"> {/*change to email and have email validation?*/}
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="Username" />
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" placeholder="Email" />
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
@@ -26,9 +26,9 @@ export class Login extends React.Component {
           </div>
         </div>
         <div className="footer">
-            <button type = "button" className="btn">
-                Login
-            </button>
+          <button type="button" className="btn">
+            Login
+          </button>
         </div>
       </div>
     );

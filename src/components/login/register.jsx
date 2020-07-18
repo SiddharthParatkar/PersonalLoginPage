@@ -15,9 +15,9 @@ export class Register extends React.Component {
             <img src={loginImg} alt="Cibu Login" />
           </div>
           <div className="form">
-            <div className="form-group"> {/*change to email and have email validation?*/}
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="Username" />
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" placeholder="Name" />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>

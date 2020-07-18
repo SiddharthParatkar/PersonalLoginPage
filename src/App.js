@@ -10,6 +10,10 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.RightSide.classList.add("right");
+  }
+
   changeState() {
     const { isLoginActive } = this.state;
     if (isLoginActive) {
