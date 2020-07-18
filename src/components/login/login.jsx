@@ -9,7 +9,7 @@ export class Login extends React.Component {
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Login</div>
+        <div className="header">Login to your Cibu Snacks Account!</div>
         <div className="content">
           <div className="image">
             <img src={loginImg} alt="Cibu Login" />
