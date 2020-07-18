@@ -12,13 +12,21 @@ class App extends React.Component {
 
   changeState() {
     const { isLoginActive } = this.state;
-    
+    if (isLoginActive) {
+      this.RightSide.classList.remove("right");
+      this.RightSide.classList.add("left");
+    } else {
+      this.RightSide.classList.remove("left");
+      this.RightSide.classList.add("right");
+    }
+
+    this.setState((prevState) => ({ isLoginActive: !prevState.isLoginActive }));
   }
 
   render() {
     const { isLoginActive } = this.state;
     const current = isLoginActive ? "Register" : "Login";
-    const currentActive = isLoginActive ? "Login" : "Register"
+    const currentActive = isLoginActive ? "Login" : "Register";
     return (
       <div className="App">
         <div className="login">
@@ -30,7 +38,11 @@ class App extends React.Component {
               <Register containerRef={(ref) => (this.current = ref)} />
             )}
           </div>
-          <RightSide current={current} containerRef={ref => this.RightSide = ref} onClick={this.changeState.bind(this)}/>
+          <RightSide
+            current={current}
+            containerRef={(ref) => (this.RightSide = ref)}
+            onClick={this.changeState.bind(this)}
+          />
         </div>
       </div>
     );
